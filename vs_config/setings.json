@@ -78,7 +78,7 @@
     "docs": "Ctrl+Alt+D"
   },
   // ====== APARÊNCIA ======
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "icons",
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,

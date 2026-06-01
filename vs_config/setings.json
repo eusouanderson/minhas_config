@@ -14,6 +14,7 @@
   // ====== TYPESCRIPT / JAVASCRIPT ======
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.resolveGlobalModules": true,
   "editor.formatOnSaveMode": "file",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -78,7 +79,7 @@
     "docs": "Ctrl+Alt+D"
   },
   // ====== APARÊNCIA ======
-  "workbench.iconTheme": "icons",
+  "workbench.iconTheme": "vs-seti",
   "editor.fontFamily": "JetBrains Mono",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,

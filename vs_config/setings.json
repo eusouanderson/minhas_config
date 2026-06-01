@@ -248,6 +248,14 @@
     "editor.wordHighlightStrongBackground": "#06b6d444",
     "editor.findMatchBackground": "#f59e0bcc",
     "editor.findMatchHighlightBackground": "#f59e0b55",
-    "editor.selectionForeground": "#ffffff"
+    "editor.selectionForeground": "#ffffff",
+    "sash.hoverBorder": "#0ea5e9",
+    "panel.border": "#1e3a5f",
+    "panelSection.border": "#1e3a5f",
+    "sideBar.border": "#1e3a5f",
+    "editorGroup.border": "#1e3a5f",
+    "editorGroupHeader.border": "#1e3a5f",
+    "tab.border": "#1e3a5f",
+    "activityBar.border": "#1e3a5f"
   }
 }

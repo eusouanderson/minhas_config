@@ -250,12 +250,12 @@
     "editor.findMatchHighlightBackground": "#f59e0b55",
     "editor.selectionForeground": "#ffffff",
     "sash.hoverBorder": "#0ea5e9",
-    "panel.border": "#1e3a5f",
-    "panelSection.border": "#1e3a5f",
-    "sideBar.border": "#1e3a5f",
-    "editorGroup.border": "#1e3a5f",
-    "editorGroupHeader.border": "#1e3a5f",
-    "tab.border": "#1e3a5f",
-    "activityBar.border": "#1e3a5f"
+    "panel.border": "#00000000",
+    "panelSection.border": "#00000000",
+    "sideBar.border": "#00000000",
+    "editorGroup.border": "#00000000",
+    "editorGroupHeader.border": "#00000000",
+    "tab.border": "#00000000",
+    "activityBar.border": "#00000000"
   }
 }

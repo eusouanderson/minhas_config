@@ -1,204 +1,253 @@
 {
-  // ========== TEMA & UI ==========
-  "workbench.colorTheme": "One Dark Pro Darker",
-  "workbench.preferredLightColorTheme": "Default Dark Modern",
-  "workbench.preferredDarkColorTheme": "Palenight (Mild Contrast)",
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.startupEditor": "newUntitledFile",
-  "workbench.activityBar.location": "bottom",
-  "workbench.statusBar.visible": false,
-  "workbench.secondarySideBar.defaultVisibility": "hidden",
-  "window.autoDetectColorScheme": true,
-  "editor.colorDecorators": true,
-  // Customizações de cores adicionais (seleçaõ de texto)
-  "workbench.colorCustomizations": {
-    "editor.selectionBackground": "#0f41c9d8",
-    "editor.selectionHighlightBackground": "#070c1150",
-    "editor.linkedEditingBackground": "#0a0f09d8"
-  },
-  // ========== UI MINIMALISTA ==========
-  "breadcrumbs.enabled": false,
-  "editor.minimap.enabled": false,
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.vertical": "hidden",
-  "editor.overviewRulerBorder": false,
-  "editor.hideCursorInOverviewRuler": false,
-  "editor.renderWhitespace": "selection",
-  // ========== CONFIGURAÇÃO DO EDITOR ==========
-  "editor.fontSize": 13,
-  "editor.lineHeight": 1.8,
-  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', Menlo, Monaco, monospace",
-  "editor.fontLigatures": true,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
-  "editor.tabSize": 2,
-  "editor.rulers": [
-    80,
-    120
-  ],
-  "editor.stickyScroll.enabled": true,
-  "editor.semanticHighlighting.enabled": true,
-  "editor.quickSuggestions": {
-    "other": "on",
-    "comments": "off",
-    "strings": "on"
-  },
-  // ========== SYNTAX HIGHLIGHTING ==========
-  "editor.tokenColorCustomizations": {
-    "[One Dark Pro Darker]": {
-      "textMateRules": [
-        {
-          "scope": [
-            "support.type.property-name.json"
-          ],
-          "settings": {
-            "foreground": "#f8ecf8"
-          }
-        },
-        {
-          "scope": [
-            "entity.name.tag.tsx",
-            "entity.name.tag.jsx"
-          ],
-          "settings": {
-            "foreground": "#E5C07B"
-          }
-        },
-        {
-          "scope": [
-            "meta.tag.attributes.tsx",
-            "meta.tag.attributes.jsx"
-          ],
-          "settings": {
-            "fontStyle": "italic bold",
-            "foreground": "#271607"
-          }
-        }
-      ]
+  // ====== TERMINAL ======
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.profiles.linux": {
+    "zsh": {
+      "path": "/usr/bin/zsh"
     }
   },
-  // ========== FORMATAÇÃO & LINTING ==========
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.scrollback": 5000,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.smoothScrolling": true,
+  // ====== TYPESCRIPT / JAVASCRIPT ======
   "editor.formatOnSave": true,
-  "eslint.validate": [
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSaveMode": "file",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "vscode.markdown-language-features"
+  },
+  // ====== PATH INTELLISENSE ======
+  "path-intellisense.showHiddenFiles": true,
+  "path-intellisense.autoSlashAfterDirectory": true,
+  "path-intellisense.autoTriggerNextSuggestion": true,
+  "path-intellisense.extensionOnImport": false,
+  // ====== GITHUB  ======
+  "editor.inlineSuggest.enabled": true,
+  "editor.suggest.preview": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "editor.tabCompletion": "on",
+  "editor.acceptSuggestionOnEnter": "smart",
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.inlineSuggest.enable": true,
+  "github.copilot.suggestions.showMultiple": true,
+  "github.copilot.advanced": {
+    "inlineSuggest.count": 3,
+    "inlineSuggest.delayMs": 100,
+    "debug.overrideEngine": "codegen",
+    "autocomplete.triggerDelay": 0,
+    "autocomplete.enableForAllLanguages": true
+  },
+  "github.copilot.chat.shortcuts": {
+    "explain": "Ctrl+Alt+E",
+    "fix": "Ctrl+Alt+F",
+    "tests": "Ctrl+Alt+T",
+    "docs": "Ctrl+Alt+D"
+  },
+  // ====== APARÊNCIA ======
+  "workbench.iconTheme": "vscode-icons",
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.8,
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSurroundingLines": 1,
+  "editor.cursorSurroundingLinesStyle": "default",
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  // ====== TAILWIND CSS ======
+  "tailwindCSS.emmetCompletions": true,
+  "tailwindCSS.experimental.classRegex": [
+    "tw`([^`]*)",
+    "tw=\"([^\"]*)",
+    "tw={\"([^\"}]*)",
+    "tw\\.\\w+`([^`]*)",
+    ["clsx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["classnames\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    "class(Name)?=\\s*['\"]([^'\"]*)['\"]"
+  ],
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "typescriptreact": "javascript",
+    "vue": "html",
+    "plaintext": "html"
+  },
+  "tailwindCSS.validate": true,
+  "tailwindCSS.lint.cssConflict": "warning",
+  "tailwindCSS.lint.invalidApply": "error",
+  "tailwindCSS.lint.invalidConfigPath": "error",
+  "tailwindCSS.lint.invalidScreen": "error",
+  "tailwindCSS.lint.invalidTailwindDirective": "error",
+  "tailwindCSS.lint.invalidVariant": "error",
+  "tailwindCSS.lint.recommendedVariantOrder": "warning",
+  "tailwindCSS.suggestions": true,
+  "tailwindCSS.colorDecorators": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "css.validate": false,
+  "scss.validate": false,
+  "less.validate": false,
+  // ====== PRODUTIVIDADE ======
+  "files.autoSave": "off",
+  "explorer.compactFolders": false,
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": true,
+  "breadcrumbs.enabled": true,
+  // ====== HTML/JSX/TAGS ======
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "vue": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showExpandedAbbreviation": "always",
+  "emmet.showSuggestionsAsSnippets": true,
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "html",
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact"
+    "typescriptreact",
+    "vue",
+    "svelte"
   ],
-  // Configurações Prettier (consolidadas)
-  "prettier.singleQuote": true,
-  "prettier.jsxSingleQuote": false,
-  "prettier.bracketSameLine": false,
-  "prettier.printWidth": 100,
-  // Configurações por linguagem (otimizadas)
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit",
-      "source.organizeImports": "explicit",
-      "source.addMissingImports": "explicit"
-    }
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit",
-      "source.organizeImports": "explicit",
-      "source.addMissingImports": "explicit"
-    }
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit",
-      "source.organizeImports": "explicit",
-      "source.addMissingImports": "explicit"
-    }
-  },
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "always"
-    }
-  },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
-    },
-    "editor.tabSize": 4
-  },
-  // ========== PYTHON CONFIG ==========
-  "python.formatting.provider": "black",
-  "python.formatting.blackArgs": [
-    "--line-length=88",
-    "--skip-string-normalization"
+  "auto-close-tag.enableAutoCloseTag": true,
+  "auto-close-tag.enableAutoCloseSelfClosingTag": true,
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "xml",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue"
   ],
-  "python.analysis.autoImportCompletions": true,
-  "python.analysis.autoSearchPaths": true,
-  "python.analysis.diagnosticMode": "workspace",
-  "python.analysis.typeCheckingMode": "basic",
-  "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "python.testing.pytestEnabled": true,
-  // ========== EMULAÇÃO JSX ==========
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact"
-  },
-  // ========== HANDLING DE IMPORTS ==========
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.suggest.autoImports": true,
-  "javascript.suggest.autoImports": true,
-  // ========== ARQUIVOS / EXPLORER ==========
-  "files.exclude": {
-    "**/.git": true,
-    "**/.DS_Store": true,
-    "**/.next": true,
-    "**/node_modules": false
-  },
-  "explorer.fileNesting.patterns": {
-    "package.json": "*.lock, .env*, tsconfig.*, vite.config.*",
-    "tsconfig.json": "tsconfig.*.json"
-  },
-  // ========== GIT ==========
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "git.autofetch": true,
-  // ========== PERFORMANCE ==========
-  "typescript.tsserver.log": "off",
-  // ========== SYNC DE CONFIGURAÇÕES ==========
-  "syncSettings.resources": [
-    "extensions",
-    "keybindings",
-    "settings",
-    "snippets",
-    "uiState"
-  ],
-  "syncSettings.ignoredExtensions": [],
-  "syncSettings.ignoredSettings": [
-    "editor.fontFamily"
-  ],
-  "syncSettings.keybindingsPerPlatform": true,
-  "syncSettings.additionalFiles": [
-    "~globalStorage/alefragnani.project-manager/projects.json"
-  ],
-  // ========== VERIFICAÇÃO ORTOGRÁFICA ==========
-  "cSpell.language": "en, pt",
-  "cSpell.userWords": [],
-  // ========== SEGURANÇA ==========
-  "security.workspace.trust.untrustedFiles": "open",
-  // ========== EXTENSÕES ESPECÍFICAS ==========
-  "database-client.autoSync": true,
-  "tailwind-fold.autoFold": false,
-  "editor.lineNumbers": "on",
-  "editor.folding": false,
-  "editor.matchBrackets": "never",
-  "editor.renderLineHighlight": "none",
-  "editor.selectionHighlight": false,
-  "editor.occurrencesHighlight": "off",
+  "html.autoClosingTags": true,
+  // ====== VISUALIZAÇÃO DE LAYOUTS ======
+  "editor.guides.indentation": false,
+  "editor.guides.highlightActiveIndentation": false,
+  "editor.linkedEditing": true,
+  "editor.matchBrackets": "always",
+  "editor.rulers": [],
+  "editor.renderWhitespace": "boundary",
+  "editor.stickyScroll.enabled": true,
+  "breadcrumbs.symbolPath": "on",
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#22d3ee",
+    "editorCursor.background": "#0b1220",
+    "editor.selectionBackground": "#22d3ee66",
+    "editor.inactiveSelectionBackground": "#22d3ee33",
+    "editor.lineHighlightBorder": "#00000000",
+    "editorRuler.foreground": "#00000000",
+    "editorIndentGuide.background1": "#00000000",
+    "editorIndentGuide.background2": "#00000000",
+    "editorIndentGuide.background3": "#00000000",
+    "editorIndentGuide.background4": "#00000000",
+    "editorIndentGuide.background5": "#00000000",
+    "editorIndentGuide.background6": "#00000000",
+    "editorIndentGuide.activeBackground1": "#00000000",
+    "editorIndentGuide.activeBackground2": "#00000000",
+    "editorIndentGuide.activeBackground3": "#00000000",
+    "editorIndentGuide.activeBackground4": "#00000000",
+    "editorIndentGuide.activeBackground5": "#00000000",
+    "editorIndentGuide.activeBackground6": "#00000000",
+    "editorBracketPairGuide.background1": "#00000000",
+    "editorBracketPairGuide.background2": "#00000000",
+    "editorBracketPairGuide.background3": "#00000000",
+    "editorBracketPairGuide.background4": "#00000000",
+    "editorBracketPairGuide.background5": "#00000000",
+    "editorBracketPairGuide.background6": "#00000000",
+    "editorBracketPairGuide.activeBackground1": "#22d3ee66",
+    "editorBracketPairGuide.activeBackground2": "#38bdf866",
+    "editorBracketPairGuide.activeBackground3": "#67e8f966",
+    "editorBracketPairGuide.activeBackground4": "#5eead466",
+    "editorBracketPairGuide.activeBackground5": "#2dd4bf66",
+    "editorBracketPairGuide.activeBackground6": "#14b8a666",
+    "editor.background": "#111827",
+    "sideBar.background": "#111827",
+    "sideBar.foreground": "#f5f5f5",
+    "list.activeSelectionForeground": "#ffffff",
+    "list.activeSelectionBackground": "#0f766ecc",
+    "list.inactiveSelectionForeground": "#e5e7eb",
+    "list.inactiveSelectionBackground": "#0f766e66",
+    "list.focusBackground": "#0f766ecc",
+    "list.focusForeground": "#ffffff",
+    "list.hoverBackground": "#164e63aa",
+    "list.hoverForeground": "#e5e7eb",
+    "list.foreground": "#00ff41",
+    "sideBarSectionHeader.background": "#6c1f92",
+    "sideBarSectionHeader.foreground": "#ffffff",
+    "activityBar.background": "#111827",
+    "activityBar.foreground": "#f5f5f5",
+    "activityBar.activeBorder": "#a259f7",
+    "activityBarBadge.background": "#a259f7",
+    "activityBarBadge.foreground": "#ffffff",
+    "statusBar.background": "#111827",
+    "statusBar.foreground": "#f5f5f5",
+    "statusBar.debuggingBackground": "#6c1f92",
+    "statusBar.debuggingForeground": "#ffffff",
+    "titleBar.activeBackground": "#111827",
+    "titleBar.activeForeground": "#ffffff",
+    "titleBar.inactiveBackground": "#111827",
+    "titleBar.inactiveForeground": "#b0b3b8",
+    "panel.background": "#111827",
+    "terminal.background": "#111827",
+    "terminal.foreground": "#f5f5f5",
+    "terminalCursor.background": "#f5f5f5",
+    "terminalCursor.foreground": "#f5f5f5",
+    "panelTitle.activeForeground": "#ffffff",
+    "panelTitle.inactiveForeground": "#b0b3b8",
+    "editor.selectionHighlightBackground": "#22d3ee2e",
+    "editor.wordHighlightBackground": "#38bdf826",
+    "editor.wordHighlightStrongBackground": "#06b6d444",
+    "editor.findMatchBackground": "#f59e0bcc",
+    "editor.findMatchHighlightBackground": "#f59e0b55",
+    "editor.selectionForeground": "#ffffff"
+  }
 }
